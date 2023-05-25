@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">ShopDemo</string>
+    <string name="label_fragment_create">Create</string>
+    <string name="label_fragment_home">Home</string>
+    <string name="label_fragment_view">View</string>
+    <string name="label_fragment_purchase">Purchase</string>
+    <string name="label_fragment_credentials_dialog">Credentials</string>
+
+    <string name="menu_item_add_description">Add</string>
+    <string name="menu_item_cart_description">Cart</string>
+    <string name="menu_item_purchase_description">Purchase</string>
+    <string name="menu_item_apply_description">Apply</string>
+    <string name="menu_item_delete_description">Delete</string>
+    <string name="menu_item_create_description">Create</string>
+
+
+    <string name="item_image_content_description">Item picture</string>
+    <string name="loading">Loading</string>
+    <string name="loading_please_wait">Loading, please wait…</string>
+    <string name="invalid_input">Invalid input</string>
+    <string name="created">Created</string>
+    <string name="updated">Updated</string>
+    <string name="deleted">Deleted</string>
+
+    <string name="edit_text_hint_name">Enter name</string>
+    <string name="edit_text_hint_descr_short">Enter short description</string>
+    <string name="edit_text_hint_descr_long">Enter long description</string>
+    <string name="edit_text_hint_price">Enter price</string>
+
+    <string name="label_interact">Editable fields clickable</string>
+    <string name="label_id">ID</string>
+    <string name="label_name">Name</string>
+    <string name="label_descr_short">Short description</string>
+    <string name="label_descr_long">Long description</string>
+    <string name="label_price">Price</string>
+    <string name="label_category">Category</string>
+    <string name="label_date">Date added</string>
+
+    <string name="edit_text_hint_username">Enter username</string>
+    <string name="edit_text_hint_password">Enter password</string>
+
+    <string name="cart_empty">Cart empty</string>
+    <string name="total">Total</string>
+
+    <string name="enter_credentials">Enter credentials</string>
+    <string name="checkout_flow">Checkout flow</string>
+</resources>

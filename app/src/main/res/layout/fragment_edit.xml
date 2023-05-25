@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="10dp"
+        android:paddingBottom="10dp">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.7" />
+
+        <TextView
+            android:id="@+id/label_id"
+            style="@style/Edit_Fragment_Label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_id"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/id"
+            style="@style/Edit_Fragment_EditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="@id/label_id"
+            app:layout_constraintTop_toBottomOf="@id/label_id" />
+
+        <TextView
+            android:id="@+id/label_name"
+            style="@style/Edit_Fragment_Label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_name"
+            app:layout_constraintStart_toStartOf="@id/id"
+            app:layout_constraintTop_toBottomOf="@id/id" />
+
+        <EditText
+            android:id="@+id/name"
+            style="@style/Edit_Fragment_EditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:autofillHints="name"
+            android:hint="@string/edit_text_hint_name"
+            android:inputType="text"
+            app:layout_constraintEnd_toEndOf="@id/guideline"
+            app:layout_constraintStart_toStartOf="@id/label_name"
+            app:layout_constraintTop_toBottomOf="@id/label_name" />
+
+        <TextView
+            android:id="@+id/label_category"
+            style="@style/Edit_Fragment_Label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_category"
+            app:layout_constraintStart_toStartOf="@id/name"
+            app:layout_constraintTop_toBottomOf="@id/name" />
+
+        <Spinner
+            android:id="@+id/spinner_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@id/label_category"
+            app:layout_constraintTop_toBottomOf="@id/label_category" />
+
+        <TextView
+            android:id="@+id/label_descr_short"
+            style="@style/Edit_Fragment_Label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_descr_short"
+            app:layout_constraintStart_toStartOf="@id/spinner_category"
+            app:layout_constraintTop_toBottomOf="@id/spinner_category" />
+
+        <EditText
+            android:id="@+id/descr_short"
+            style="@style/Edit_Fragment_EditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:autofillHints="description"
+            android:hint="@string/edit_text_hint_descr_short"
+            android:inputType="text"
+            app:layout_constraintEnd_toEndOf="@id/guideline"
+            app:layout_constraintStart_toStartOf="@id/label_descr_short"
+            app:layout_constraintTop_toBottomOf="@id/label_descr_short" />
+
+        <TextView
+            android:id="@+id/label_descr_long"
+            style="@style/Edit_Fragment_Label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_descr_long"
+            app:layout_constraintStart_toStartOf="@id/descr_short"
+            app:layout_constraintTop_toBottomOf="@id/descr_short" />
+
+        <EditText
+            android:id="@+id/descr_long"
+            style="@style/Edit_Fragment_EditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:autofillHints="description"
+            android:hint="@string/edit_text_hint_descr_long"
+            android:inputType="text"
+            app:layout_constraintEnd_toEndOf="@id/guideline"
+            app:layout_constraintStart_toStartOf="@id/label_descr_long"
+            app:layout_constraintTop_toBottomOf="@id/label_descr_long" />
+
+        <TextView
+            android:id="@+id/label_price"
+            style="@style/Edit_Fragment_Label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_price"
+            app:layout_constraintStart_toStartOf="@id/descr_long"
+            app:layout_constraintTop_toBottomOf="@id/descr_long" />
+
+        <EditText
+            android:id="@+id/price"
+            style="@style/Edit_Fragment_EditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:autofillHints="price"
+            android:hint="@string/edit_text_hint_price"
+            android:inputType="text"
+            app:layout_constraintEnd_toEndOf="@id/guideline"
+            app:layout_constraintStart_toStartOf="@id/label_price"
+            app:layout_constraintTop_toBottomOf="@id/label_price" />
+
+        <TextView
+            android:id="@+id/label_date"
+            style="@style/Edit_Fragment_Label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_date"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="@id/price"
+            app:layout_constraintTop_toBottomOf="@id/price" />
+
+        <TextView
+            android:id="@+id/date"
+            style="@style/Edit_Fragment_EditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="@id/label_date"
+            app:layout_constraintTop_toBottomOf="@id/label_date" />
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="@dimen/img_side"
+            android:layout_height="@dimen/img_side"
+            android:layout_marginTop="15dp"
+            android:contentDescription="@string/item_image_content_description"
+            app:layout_constraintStart_toStartOf="@id/date"
+            app:layout_constraintTop_toBottomOf="@id/date" />
+
+        <Spinner
+            android:id="@+id/spinner_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@id/img"
+            app:layout_constraintTop_toBottomOf="@id/img" />
+
+        <include layout="@layout/loading_common" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

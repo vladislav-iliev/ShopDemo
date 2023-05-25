@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="@layout/item_short_home">
+
+    <ImageView
+        android:id="@+id/item_img"
+        android:layout_width="@dimen/img_side"
+        android:layout_height="@dimen/img_side"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/item_image_content_description"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/item_id"
+        style="@style/List_Item_Text_Field"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="0dp"
+        app:layout_constraintBottom_toBottomOf="@id/item_img"
+        app:layout_constraintStart_toEndOf="@id/item_img"
+        app:layout_constraintTop_toTopOf="@id/item_img" />
+
+    <TextView
+        android:id="@+id/item_name"
+        style="@style/List_Item_Text_Field"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="0dp"
+        app:layout_constraintBottom_toTopOf="@id/item_category"
+        app:layout_constraintEnd_toStartOf="@android:id/button1"
+        app:layout_constraintStart_toEndOf="@id/item_id"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <TextView
+        android:id="@+id/item_category"
+        style="@style/List_Item_Text_Field"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/item_description"
+        app:layout_constraintEnd_toStartOf="@android:id/button1"
+        app:layout_constraintStart_toStartOf="@id/item_name"
+        app:layout_constraintTop_toBottomOf="@id/item_name" />
+
+    <TextView
+        android:id="@+id/item_description"
+        style="@style/List_Item_Text_Field"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/item_price"
+        app:layout_constraintEnd_toStartOf="@android:id/button1"
+        app:layout_constraintStart_toStartOf="@id/item_category"
+        app:layout_constraintTop_toBottomOf="@id/item_category" />
+
+    <TextView
+        android:id="@+id/item_price"
+        style="@style/List_Item_Text_Field"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="@android:id/button1"
+        app:layout_constraintStart_toStartOf="@id/item_description"
+        app:layout_constraintTop_toBottomOf="@id/item_description" />
+</merge>

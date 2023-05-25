@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="MyRecyclerView">
+        <item name="android:scrollbars">vertical</item>
+        <item name="layoutManager">androidx.recyclerview.widget.LinearLayoutManager</item>
+    </style>
+
+    <style name="ListBtn" parent="Widget.MaterialComponents.Button.TextButton.Icon">
+        <item name="android:layout_width">48dp</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:minWidth">0dp</item>
+        <item name="android:minHeight">0dp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:insetLeft">0dp</item>
+        <item name="android:insetRight">0dp</item>
+        <item name="backgroundTint">@android:color/transparent</item>
+        <item name="iconPadding">0dp</item>
+        <item name="iconTint">@color/black</item>
+    </style>
+
+    <style name="List_Fragment">
+        <item name="android:background">@color/grey_light</item>
+    </style>
+
+    <style name="List_Item_Container">
+        <item name="android:layout_margin">6dp</item>
+        <item name="android:paddingHorizontal">10dp</item>
+        <item name="android:paddingVertical">8dp</item>
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <style name="List_Item_Text_Field">
+        <item name="android:layout_marginTop">3dp</item>
+        <item name="android:layout_marginEnd">8dp</item>
+    </style>
+
+    <style name="Edit_Fragment_Label">
+        <item name="android:layout_marginTop">15dp</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="Edit_Fragment_EditText">
+        <item name="android:textSize">16sp</item>
+    </style>
+</resources>

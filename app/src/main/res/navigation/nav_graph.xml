@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/createFragment"
+        android:name="com.vladislaviliev.shopdemo.ui.edit.create.CreateFragment"
+        android:label="@string/label_fragment_create" />
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.vladislaviliev.shopdemo.ui.home.HomeFragment"
+        android:label="@string/label_fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_viewFragment"
+            app:destination="@id/viewFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_purchaseFragment"
+            app:destination="@id/purchaseFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_createFragment"
+            app:destination="@id/createFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/viewFragment"
+        android:name="com.vladislaviliev.shopdemo.ui.edit.view.ViewFragment"
+        android:label="@string/label_fragment_view">
+        <argument
+            android:name="uid"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/purchaseFragment"
+        android:name="com.vladislaviliev.shopdemo.ui.purchase.PurchaseFragment"
+        android:label="@string/label_fragment_purchase">
+        <action
+            android:id="@+id/action_purchaseFragment_to_credentialsDialog"
+            app:destination="@id/credentialsDialog" />
+    </fragment>
+    <dialog
+        android:id="@+id/credentialsDialog"
+        android:name="com.vladislaviliev.shopdemo.ui.purchase.CredentialsDialog"
+        android:label="@string/label_fragment_credentials_dialog" />
+</navigation>

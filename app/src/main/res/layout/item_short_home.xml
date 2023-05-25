@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/List_Item_Container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <include layout="@layout/item_short_common" />
+
+    <Button
+        android:id="@android:id/button1"
+        style="@style/ListBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:icon="@drawable/ic_eye"
+        app:layout_constraintBottom_toTopOf="@android:id/button2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="spread" />
+
+    <Button
+        android:id="@android:id/button2"
+        style="@style/ListBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:icon="@drawable/ic_cart_add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@android:id/button1"
+        app:layout_constraintStart_toStartOf="@android:id/button1"
+        app:layout_constraintTop_toBottomOf="@android:id/button1" />
+</androidx.constraintlayout.widget.ConstraintLayout>
